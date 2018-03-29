@@ -26,6 +26,7 @@ document.onkeyup = function(event) {
     // Taking the tallies and displaying them in HTML    
     var html = "<h1>The Psychic Game</h1>" + 
     "<h2>Guess what letter I'm thinking of?</h2>" +
+    "<h3><pre>You have 9 chances to win each game---Will you guess right?</pre></h3>" + 
     "<p>Wins: " + 
     wins + 
     "</p>" +
@@ -35,10 +36,23 @@ document.onkeyup = function(event) {
     "<p>Guesses Left: " + 
     guessesLeft + 
     "</p>" +
-    "<p>Guesess Used: " +
+    "<p>Guesses Used: " +
     guessesSoFar +
     "</p>"
     ;
+    function myFunction() {
+        document.getElementById("h2").style.color = "darkmagenta";
+        document.getElementById("h2").style.fontSize = 36;
+        document.getElementById.style.padding = 30;
+    }
+    function myFunction() {
+        document.getElementById("h3").style.color = "darkorchid";
+        document.getElementById("h3").style.fontSize = 32;
+        document.getElementById("h3").style.fontWeight = bold;
+
+    }    
+    function myFunction() {    document.getElementsByClassName("play") = "darkblue";
+    }
     // Placing the html into the game ID
     document.querySelector('#game').innerHTML = html;
 }
